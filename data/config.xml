@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<Test>
+		<name>kk</name>
+		<desc>测试文档</desc>
+		<cron>*/1 * * * *</cron><!--与linux crontab 语法一致-->
+		<log>log/kk_{Date:Y-m-d}.log</log><!--日志名称-->
+		<path>script/test.php</path><!--执行文件-->
+		<timeout>30</timeout><!--超时时间-->
+		<param><!--参数-->
+			<readDb>
+				<host>127.0.0.1</host>
+				<user>root</user>
+				<password>123456</password>
+				<database>test</database>
+			</readDb>
+		</param>
+	</Test>
+</config>
